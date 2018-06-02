@@ -3,14 +3,20 @@ COPY
 <html lang="en">
 
 <head>
+    <title>JS Loan Calculator</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <style>
+        #loading,
+        #results {
+            display: none;
+        }
+    </style>
 
-    <title>Hello, world!</title>
 </head>
 
 <body class="bg-dark">
@@ -18,7 +24,7 @@ COPY
         <div class="row">
             <div class="col-md-6 mx-auto">
                 <div class="card card-body text-center mt-5">
-                    <h1 class="heading display-5 pb-3">JS Calculator</h1>
+                    <h1 class="heading display-5 pb-3">JS Loan Calculator</h1>
                     <form action="" id="loan-form">
                         <div class="form-group">
                             <div class="input-group">
@@ -42,11 +48,11 @@ COPY
                         </div>
                     </form>
                     <!-- LOADER HERE -->
-                    <!--
-                    <div id="lading">
-                      <img src="img/loading.gif" alt="loading">
+
+                    <div id="loading">
+                        <img src="img/loading.gif" alt="loading">
                     </div>
-                    -->
+
                     <!-- RESULUS -->
                     <div id="results">
                         <h5>Results</h5>
